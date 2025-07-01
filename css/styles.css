@@ -1,0 +1,136 @@
+/* === BASE STYLES === */
+body {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* === HEADINGS === */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* === GLOBAL LINK STYLING === */
+  a {
+    color: #005fa3;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s, outline 0.2s;
+  }
+  
+  a:visited {
+    color: #4b0082;
+  }
+  
+  a:hover {
+    color: #003f70;
+    text-decoration: none;
+  }
+  
+  a:focus {
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+    background-color: #f0f8ff;
+    border-radius: 4px;
+  }
+  
+  /* === SPLASH PAGE === */
+  .splash {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .pilot-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .pilot-box {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pilot-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pilot-box:hover,
+  .pilot-box:focus {
+    background-color: #005fa3;
+    transform: translateY(-4px);
+    outline: 3px solid #ffcc00;
+    outline-offset: 3px;
+  }
+
+  .pilot-box:visited,
+  .pilot-box h3:visited,
+  .pilot-box p:visited {
+    color: white;
+  }
+  
+  /* === MAIN NAVIGATION === */
+  .main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .main-nav li a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+  
+  /* === RESPONSIVE DESIGN === */
+  @media (min-width: 600px) {
+    .pilot-boxes {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .pilot-box {
+      min-width: 250px;
+    }
+  }
+  
