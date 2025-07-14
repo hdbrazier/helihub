@@ -3,57 +3,108 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HeliHub | Aspiring Helicopter Pilots</title>
-  <meta name="description" content="HeliHub's central hub for aspiring helicopter pilots. Explore career options, study resources, and mentorship opportunities."/>
+  <title>HeliHub - Pathways for Aspiring Helicopter Pilots</title>
+  <meta name="description" content="HeliHub's starting point for aspiring helicopter pilots. Explore careers, study resources, and mentorship opportunities."/>
   <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <header>
-    <a href="index.html" aria-label="Return to HeliHub homepage">
-      <h1>HeliHub</h1>
-    </a>
-    <nav aria-label="Main navigation for aspiring helicopter pilots">
+  <header class="site-banner">
+    <div class="banner-left">
+      <a href="index.html" class="logo-link" aria-label="HeliHub homepage">
+        <img src="images/logo.png" alt="HeliHub logo" class="site-logo" />
+        <span class="site-name">HeliHub</span>
+      </a>
+    </div>
+
+    <nav class="banner-nav" aria-label="Main navigation for aspiring helicopter pilots">
       <ul class="main-nav">
-        <li><a href="career.html">Career Options</a></li>
+        <li><a href="career.html">Career Paths</a></li>
         <li><a href="study.html">Study Resources</a></li>
         <li><a href="mentor.html">Find a Mentor</a></li>
-        <li><a href="howto.html">How To</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="open-contact-nav">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main role="main">
-    <section>
-      <h2><a href="career.html">Helicopter Pilot Career Options</a></h2>
-      <p>Learn about the different career paths in the helicopter aviation field, including commercial, EMS, Fire and instructional flying.</p>
+  <main class="background-img" role="main">
+    <section class="page-intro">
+      <h2>All Things Helicopter Related</h2>
+      <p>Get started on your journey to becoming a certified helicopter pilot with tools, guidance, and mentorship.</p>
     </section>
 
-    <section>
-      <h2><a href="study.html">Study Resources for New Pilots</a></h2>
-      <p>Access study guides to help you prepare for certification and exams.</p>
+    <section class="quick-access">
+      <h2>Launchpad</h2>
+      <div class="card-grid">
+        <a href="career.html" class="card">
+          <h3>Career Paths</h3>
+          <p>Explore exciting aviation roles and training options.</p>
+        </a>
+        <a href="study.html" class="card">
+          <h3>Resources</h3>
+          <p>Find essential materials and links to help you prepare for your journey.</p>
+        </a>
+        <a href="mentor.html" class="card">
+          <h3>Find a Mentor</h3>
+          <p>Connect with experienced helicopter pilots who can guide your path.</p>
+        </a>
+      </div>
     </section>
 
-    <section>
-      <h2><a href="mentor.html">Find a Mentor</a></h2>
-      <p>Connect with experienced helicopter pilots to get guidance, ask questions, and gain insight into the aviation industry.</p>
-    </section>
-
-    <section>
-        <h2><a href="howto.html">How to set yourself up successfully</a></h2>
-        <p>Resources on how to obtain a flight medical, get TSA clearance, certification requirements</p>
+    <section class="stay-connected-box">
+      <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <p><a href="#" id="open-contact-body">Contact us</a> to stay informed or suggest content we should add to HeliHub.</p>
+        <p><a href="index.html">&larr; Back to HeliHub Home</a></p>
       </section>
-
-    <section>
-      <h2>Start Your Journey</h2>
-      <p><a href="contact.html">Reach out to us</a> to ask questions, get matched with mentors, or suggest resources for HeliHub.</p>
     </section>
-
-    <p><a href="index.html">&larr; Back to HeliHub Home</a></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 HeliHub | Supporting the next generation of helicopter pilots.</p>
+    <ul class="social-icons" aria-label="HeliHub social media links">
+      <li>
+        <a href="#" aria-label="HeliHub on Facebook">
+          <img src="images/icon-facebook.svg" alt="Facebook icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on X (Twitter)">
+          <img src="images/icon-x.svg" alt="X icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on LinkedIn">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on Instagram">
+          <img src="images/icon-instagram.svg" alt="Instagram icon" />
+        </a>
+      </li>
+    </ul>
+    <p>&copy; 2025 HeliHub - Designed for helicopter pilots, by helicopter pilots.</p>
   </footer>
+
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close Contact Form">&times;</button>
+      <h2 id="contactTitle">Contact HeliHub</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <button type="submit">Send Message</button>
+        <p class="form-feedback" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/contact.js"></script>
 </body>
 </html>

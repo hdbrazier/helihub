@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeliHub | Helicopter Pilot Resources</title>
+  <meta name="description" content="Trusted tools and official links for helicopter pilots. Weather, safety, licensing, and more.">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-banner">
+    <div class="banner-left">
+      <a href="index.html" class="logo-link" aria-label="HeliHub homepage">
+        <img src="images/logo.png" alt="HeliHub logo" class="site-logo" />
+        <span class="site-name">HeliHub</span>
+      </a>
+    </div>
+    <nav class="banner-nav" aria-label="Main navigation for existing helicopter pilots">
+      <ul class="main-nav">
+        <li><a href="resume.html">Resume Builder</a></li>
+        <li><a href="resources.html" aria-current="page">Resources</a></li>
+        <li><a href="jobs.html">Job Search</a></li>
+        <li><a href="#" id="open-contact-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="background-img">
+    <section class="page-intro">
+      <h1>Helicopter Pilot Resource Center</h1>
+      <p>Access trusted tools and official sites to stay safe, certified, and informed.</p>
+    </section>
+
+    <section class="card-grid resources-grid">
+      <a class="card" href="https://aviationweather.gov/" target="_blank" rel="noopener" aria-label="Aviation Weather Center">
+        <h3>Aviation Weather Center</h3>
+        <p>Plan flights using accurate aviation weather forecasts and alerts.</p>
+      </a>
+      <a class="card" href="https://medxpress.faa.gov/" target="_blank" rel="noopener" aria-label="FAA MedXPress">
+        <h3>FAA MedXPress</h3>
+        <p>Submit your FAA medical application before your AME appointment.</p>
+      </a>
+      <a class="card" href="https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx" target="_blank" rel="noopener" aria-label="NTSB Aviation Database">
+        <h3>NTSB Aviation Database</h3>
+        <p>Search aviation accident investigations for safety insights and trends.</p>
+      </a>
+      <a class="card" href="https://designee.faa.gov/" target="_blank" rel="noopener" aria-label="FAA Examiner Locator">
+        <h3>FAA Examiner Locator</h3>
+        <p>Find certified FAA examiners (DPEs) near you.</p>
+      </a>
+      <a class="card" href="https://rotor.org/" target="_blank" rel="noopener" aria-label="Helicopter Association International">
+        <h3>Helicopter Association International</h3>
+        <p>Industry news, safety programs, events, and advocacy for rotary-wing pilots.</p>
+      </a>
+      <a class="card" href="https://iacra.faa.gov/" target="_blank" rel="noopener" aria-label="IACRA - FAA Certification Portal">
+        <h3>IACRA</h3>
+        <p>Start or manage your FAA certifications through the official Integrated Airman Certification and Rating Application.</p>
+      </a>
+      <a class="card" href="https://tfr.faa.gov/tfr_map_ims/html/index.html" target="_blank" rel="noopener" aria-label="FAA Temporary Flight Restrictions (TFRs)">
+        <h3>TFRs Map</h3>
+        <p>Check current Temporary Flight Restrictions to stay safe and compliant before your flight.</p>
+      </a>
+      <a class="card" href="https://www.aopa.org/" target="_blank" rel="noopener" aria-label="AOPA - Aircraft Owners and Pilots Association">
+        <h3>AOPA</h3>
+        <p>Access advocacy, flight planning tools, and member benefits from the Aircraft Owners and Pilots Association.</p>
+      </a>
+      <a class="card" href="https://www.faasafety.gov/" target="_blank" rel="noopener" aria-label="FAA Safety Team Website">
+        <h3>FAASafety.gov</h3>
+        <p>Improve your safety knowledge through courses, events, and pilot proficiency programs hosted by the FAA Safety Team.</p>
+      </a>
+    </section>
+    <section class="stay-connected-box">
+      <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <p><a href="#" id="open-contact-body">Contact us</a> to suggest new resources or share your favorites with HeliHub.</p>
+        <p><a href="existing.html">&larr; Back to Certified Pilots</a></p>
+        <p><a href="index.html">&larr; Back to HeliHub</a></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="social-icons" aria-label="HeliHub social media links">
+      <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook icon" /></a></li>
+      <li><a href="#"><img src="images/icon-x.svg" alt="X icon" /></a></li>
+      <li><a href="#"><img src="images/icon-linkedin.svg" alt="LinkedIn icon" /></a></li>
+      <li><a href="#"><img src="images/icon-instagram.svg" alt="Instagram icon" /></a></li>
+    </ul>
+    <p>&copy; 2025 HeliHub - Designed for helicopter pilots, by helicopter pilots.</p>
+  </footer>
+
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close Contact Form">&times;</button>
+      <h2 id="contactTitle">Contact HeliHub</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-feedback" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

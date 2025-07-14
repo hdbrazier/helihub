@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeliHub - Helicopter Career Paths</title>
+  <meta name="description" content="Explore diverse helicopter career options from firefighting to EMS. Learn what each role involves and how to get started."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header class="site-banner">
+    <div class="banner-left">
+      <a href="index.html" class="logo-link" aria-label="HeliHub homepage">
+        <img src="images/logo.png" alt="HeliHub logo" class="site-logo" />
+        <span class="site-name">HeliHub</span>
+      </a>
+    </div>
+    <nav class="banner-nav" aria-label="Main navigation for aspiring helicopter pilots">
+      <ul class="main-nav">
+        <li><a href="career.html" aria-current="page">Career Path</a></li>
+        <li><a href="study.html">Study Resources</a></li>
+        <li><a href="mentor.html">Find a Mentor</a></li>
+        <li><a href="#" id="open-contact-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top" class="background-img">
+    <section class="page-intro">
+      <h1>Helicopter Career Options</h1>
+      <p>Explore the diverse paths available to helicopter pilots—from instructing new students to flying critical missions around the world.</p>
+    </section>
+  
+    <section class="career-path">
+      <div class="career-block">
+        <img src="images/training.jpg" alt="Flight instructor cockpit view" class="float-left" />
+        <h2>Flight Instructor</h2>
+        <p>Flight instructors play a crucial role in training the next generation of pilots. This is often the first career step after earning a commercial license, allowing you to build flight hours while finesing aviation skills.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/ag-heli.jpg" alt="Helicopter spraying crops" class="float-right" />
+        <h2>Agricultural Flying</h2>
+        <p>Aerial application, or "crop dusting," involves flying low and with precision. It's generally seasonal, well-paying and often requires specialized training in equipment and chemical handling.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/firefighting.jpg" alt="Helicopter dropping water on a wildfire" class="float-left" />
+        <h2>Firefighting</h2>
+        <p>Helicopter pilots in fire suppression operations provide vital support, including water drops and crew transport in dangerous and dynamic conditions. Experience and accuracy are essential.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/search-rescue.jpg" alt="Search and rescue helicopter" class="float-right" />
+        <h2>Search and Rescue</h2>
+        <p>These missions often involve flying in rugged terrain and poor weather. SAR pilots help locate and rescue stranded or injured individuals, often working closely with emergency teams.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/coastguard.jpg" alt="Coast Guard helicopter" class="float-left" />
+        <h2>Coast Guard</h2>
+        <p>Flying for the Coast Guard means combining aviation skills with maritime operations. Pilots may patrol coastlines, assist in law enforcement, or perform over-water rescues.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/ems.jpg" alt="EMS helicopter on helipad" class="float-right" />
+        <h2>Emergency Medical Services (EMS)</h2>
+        <p>EMS pilots transport critical care patients to hospitals, often flying in high-pressure and time-sensitive scenarios. These roles typically require night-flying and instrument experience in poor weather conditions.</p>
+      </div>
+  
+      <div class="career-block">
+        <img src="images/heli-saw.jpg" alt="Utility helicopter carrying a saw" class="float-left" />
+        <h2>Utility Operations</h2>
+        <p>Utility pilots work in construction, logging, and infrastructure inspection — flying close to power lines, trees or transporting heavy loads. Precision and coordination are required skills.</p>
+      </div>
+    </section>
+    <p style="text-align: center; margin-top: 2rem;">
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
+    </p>
+
+    <section class="stay-connected-box">
+      <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <p><a href="#" id="open-contact-body">Contact us</a> to ask questions or let us know what paths you'd like to learn more about.</p>
+        <p><a href="aspiring.html">&larr; Back to Aspiring Pilot</a></p>
+        <p><a href="index.html">&larr; Back to HeliHub</a></p>
+      </section>
+    </section>
+      
+  </main>
+
+  <footer>
+    <ul class="social-icons" aria-label="HeliHub social media links">
+      <li>
+        <a href="#" aria-label="HeliHub on Facebook">
+          <img src="images/icon-facebook.svg" alt="Facebook icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on X (Twitter)">
+          <img src="images/icon-x.svg" alt="X icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on LinkedIn">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on Instagram">
+          <img src="images/icon-instagram.svg" alt="Instagram icon" />
+        </a>
+      </li>
+    </ul>
+    <p>&copy; 2025 HeliHub - Designed for helicopter pilots, by helicopter pilots.</p>
+  </footer>
+
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close Contact Form">&times;</button>
+      <h2 id="contactTitle">Contact HeliHub</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <button type="submit">Send Message</button>
+        <p class="form-feedback" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

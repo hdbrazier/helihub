@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HeliHub | Choose Your Helicopter Path</title>
+  <title>HeliHub - Choose Your Helicopter Path</title>
   <meta name="description" content="HeliHub is your helicopter career resource. Choose between existing pilot tools or aspiring pilot guidance."/>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-  <header>
-    <h1>HeliHub</h1>
+  <header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="HeliHub homepage">
+      <img src="images/logo.png" alt="HeliHub logo" class="site-logo" />
+      <span class="site-name">HeliHub</span>
+    </a>
   </header>
 
-  <main role="main" class="splash">
+  <main role="main" class="splash-container">
+    <div class="overlay" aria-hidden="true"></div>
+
     <h2>Select Your Helicopter Pilot Path</h2>
     <p>Choose the option that best matches your aviation journey.</p>
 
@@ -31,7 +36,29 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 HeliHub | Helping you navigate the skies.</p>
+    <ul class="social-icons" aria-label="HeliHub social media links">
+      <li>
+        <a href="#" aria-label="HeliHub on Facebook">
+          <img src="images/icon-facebook.svg" alt="Facebook icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on X (Twitter)">
+          <img src="images/icon-x.svg" alt="X icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on LinkedIn">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" />
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="HeliHub on Instagram">
+          <img src="images/icon-instagram.svg" alt="Instagram icon" />
+        </a>
+      </li>
+    </ul>
+    <p>&copy; 2025 HeliHub - Helping you navigate the skies.</p>
   </footer>
 </body>
 </html>

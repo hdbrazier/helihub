@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeliHub - Find a Mentor</title>
+  <meta name="description" content="Connect with aviation mentorship programs and professional pilot organizations to grow your career.">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-banner">
+    <div class="banner-left">
+      <a href="index.html" class="logo-link" aria-label="HeliHub homepage">
+        <img src="images/logo.png" alt="HeliHub logo" class="site-logo" />
+        <span class="site-name">HeliHub</span>
+      </a>
+    </div>
+
+    <nav class="banner-nav" aria-label="Main navigation for aspiring helicopter pilots">
+      <ul class="main-nav">
+        <li><a href="career.html">Career Paths</a></li>
+        <li><a href="study.html">Study Resources</a></li>
+        <li><a href="mentor.html" aria-current="page">Find a Mentor</a></li>
+        <li><a href="#" id="open-contact-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="background-img">
+    <section class="page-intro">
+      <h1>Find a Mentor</h1>
+      <p>Whether you're just starting your flight training or transitioning into a new specialty, connecting with experienced aviators can guide your journey. These are some trusted mentoring communities.</p>
+    </section>
+
+    <section class="card-grid resources-grid">
+      <a class="card" href="https://www.whirlygirls.org/" target="_blank" rel="noopener" aria-label="Whirly-Girls International website">
+        <h3>Whirly-Girls International</h3>
+        <p>A global organization of female helicopter pilots offering scholarships, mentoring, and networking.</p>
+      </a>
+
+      <a class="card" href="https://www.wai.org/" target="_blank" rel="noopener" aria-label="Women in Aviation International">
+        <h3>Women in Aviation International</h3>
+        <p>Supporting women across all aviation fields through events, mentorship, and resources.</p>
+      </a>
+
+      <a class="card" href="https://www.ninety-nines.org/" target="_blank" rel="noopener" aria-label="The Ninety-Nines Organization of Women Pilots">
+        <h3>The Ninety-Nines</h3>
+        <p>An international organization of women pilots founded in 1929, dedicated to advancement through education and mentoring.</p>
+      </a>
+
+      <a class="card" href="https://www.ngpa.org/" target="_blank" rel="noopener" aria-label="National Gay Pilots Association website">
+        <h3>NGPA</h3>
+        <p>National Gay Pilots Association fosters equality and mentorship for LGBTQ+ pilots and aviation professionals.</p>
+      </a>
+
+      <a class="card" href="https://obap.org/" target="_blank" rel="noopener" aria-label="Organization of Black Aerospace Professionals website">
+        <h3>OBAP</h3>
+        <p>Organization of Black Aerospace Professionals connect underrepresented youth and professionals in aerospace through mentorship, training, and scholarships.</p>
+      </a>
+
+      <a class="card" href="https://www.aeroeducate.org/" target="_blank" rel="noopener" aria-label="AeroEducate by EAA">
+        <h3>AeroEducate</h3>
+        <p>An outreach program by the EAA to inspire and educate youth through hands-on aviation experiences.</p>
+      </a>
+    </section>
+
+    <section class="inspirational-quote">
+        <blockquote>
+          “For once you have tasted flight, you will walk the earth with your eyes turned skyward,  
+          for there you have been, and there you will long to return.”
+          <footer>— Attributed to Leonardo da Vinci</footer>
+        </blockquote>
+      </section>      
+
+    <section class="stay-connected-box">
+      <section class="stay-connected">
+        <h2>Stay Connected</h2>
+        <p><a href="#" id="open-contact-body">Contact us</a> to learn more about mentorship or to suggest a group we should add.</p>
+        <p><a href="aspiring.html">&larr; Back to Aspiring Pilot</a></p>
+        <p><a href="index.html">&larr; Back to HeliHub</a></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="social-icons" aria-label="HeliHub social media links">
+      <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook icon" /></a></li>
+      <li><a href="#"><img src="images/icon-x.svg" alt="X icon" /></a></li>
+      <li><a href="#"><img src="images/icon-linkedin.svg" alt="LinkedIn icon" /></a></li>
+      <li><a href="#"><img src="images/icon-instagram.svg" alt="Instagram icon" /></a></li>
+    </ul>
+    <p>&copy; 2025 HeliHub - Designed for helicopter pilots, by helicopter pilots.</p>
+  </footer>
+
+  <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle" hidden>
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close Contact Form">&times;</button>
+      <h2 id="contactTitle">Contact HeliHub</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-feedback" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
