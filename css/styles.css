@@ -23,10 +23,6 @@ header, footer {
   color: white;
 }
 
-main {
-  padding: 6rem 2rem 2rem; 
-  text-align: center;
-}
 
 /* Stay Connected */
 .stay-connected h2 {
@@ -123,13 +119,14 @@ h3 {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #0e1a2b;
-  position: fixed;
+  
   top: 0;
   left: 0;
   width: 100%;
   max-width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
 }
 
 /* Navigation */
@@ -485,14 +482,14 @@ a:visited,
 }
 
 main {
-  padding: 6rem 2rem 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
 /* Responsive padding for stacked header */
 @media (max-width: 768px) {
   main {
-    padding-top: 22rem; 
+    padding-top: 2rem 1rem; 
   }
 }
 
@@ -554,7 +551,7 @@ main {
 .page-intro {
   background-color: #305270; 
   color: white;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 3rem;
   text-align: center;
 }
 
@@ -585,7 +582,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 6rem 2rem 2rem; 
+  
 }
 
 /* Career path section */
