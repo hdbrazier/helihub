@@ -492,7 +492,7 @@ main {
 /* Responsive padding for stacked header */
 @media (max-width: 768px) {
   main {
-    padding-top: 19rem; 
+    padding-top: 22rem; 
   }
 }
 
