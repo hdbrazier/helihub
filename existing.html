@@ -31,7 +31,7 @@
       <h2>All Things Helicopter Related</h2>
       <p>Access the tools and information you need to advance your career in the skies.</p>
     </section>
-
+    
     <section class="quick-access">
       <h2>Launchpad</h2>
       <div class="card-grid">
@@ -49,6 +49,42 @@
         </a>
       </div>
     </section>
+    <section class="weather-widget-box">
+      <h2>Current Weather Conditions</h2>
+      <p>Check local aviation weather before you fly.</p>
+      <!-- Example WeatherWidget.io embed -->
+      <a class="weatherwidget-io" href="https://forecast7.com/en/39d77n86d16/indianapolis/" 
+         data-label_1="INDIANAPOLIS" data-label_2="WEATHER" 
+         data-theme="dark" data-basecolor="#305270" data-textcolor="#ffffff" >
+        INDIANAPOLIS WEATHER
+      </a>
+    </section>
+    
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+    
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do I need a college degree to become a helicopter pilot?</button>
+        <div class="faq-answer">
+          <p>No, a degree is not required to become a helicopter pilot. However, some employers may prefer it for certain roles.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How many hours do I need to get hired?</button>
+        <div class="faq-answer">
+          <p>Most entry-level jobs require around 1000-1500 hours, which pilots typically build as flight instructors.</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is financial aid available for training?</button>
+        <div class="faq-answer">
+          <p>Yes! Loans, grants, GI Bill benefits, and scholarships are often available depending on the school and your background.</p>
+        </div>
+      </div>
+    </section>
+    
     <section class="stay-connected-box">
       <section class="stay-connected">
         <h2>Stay Connected</h2>
@@ -105,5 +141,15 @@
   </div>
 
   <script src="js/contact.js"></script>
+  <script>
+    !function(d,s,id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+    </script>    
 </body>
 </html>
