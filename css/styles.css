@@ -774,3 +774,114 @@ main {
 .training-table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* faq */
+.faq {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.faq h2 {
+  margin-bottom: 1.5rem;
+  color: #305270;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  background-color: #305270;
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover,
+.faq-question:focus {
+  background-color: #1c2d45;
+  outline: 2px solid white;
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem;
+  border-left: 4px solid #305270;
+  background-color: #e9f3ff;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
+
+/* weather widget */
+.weather-widget-box {
+  background-color: #305270;
+  color: white;
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.weather-widget-box h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.weather-widget-box {
+  background-color: #1c2d45;
+  color: white;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.weather-widget-box h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.widget-container {
+  margin-bottom: 1.5rem;
+}
+
+.raw-metar-box,
+.raw-taf-box {
+  margin-top: 1rem;
+  background-color: #305270;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: left;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.raw-metar-box h3,
+.raw-taf-box h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}

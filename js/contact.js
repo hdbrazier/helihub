@@ -27,8 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
 
+    // email format check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!name || !email || !message) {
       feedback.textContent = 'Please fill out all fields.';
+      feedback.style.color = 'red';
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      feedback.textContent = 'Please enter a valid email address.';
       feedback.style.color = 'red';
       return;
     }
@@ -41,5 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
       feedback.textContent = '';
     }, 2000);
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      const answer = btn.nextElementSibling;
+      answer.style.display = expanded ? 'none' : 'block';
+    });
   });
 });
